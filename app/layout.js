@@ -4,7 +4,7 @@ import "./globals.scss";
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
 export const metadata = {
-  // metadataBase: new URL("http://localhost:3000/"),
+  metadataBase: new URL("https://klgrch.ru/"),
   themeColor: "#649ceb",
   title: "Nikolay Gerasimov - WEB-developer",
   description: "Create web-sites for your and your bussines with love.",
