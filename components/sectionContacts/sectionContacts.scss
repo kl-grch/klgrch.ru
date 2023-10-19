@@ -1,0 +1,46 @@
+@import "sass/mixins.scss";
+
+.contacts {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    position: relative;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: 900;
+    @include before_circle;
+  }
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  &__info {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    .info {
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .item {
+          &__img i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contacts__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts__subtitle {
+    font-size: 28px;
+  }
+}

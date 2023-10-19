@@ -1,0 +1,112 @@
+@import "sass/mixins.scss";
+
+.advanced {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    position: relative;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: 900;
+    @include before_circle;
+  }
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  &__info {
+    padding: 60px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+
+    .info {
+      &__column {
+        flex: 1;
+        .column {
+          &__title {
+            padding-left: 35px;
+            position: relative;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: -6.5px;
+              -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+              width: 15px;
+              height: 15px;
+              background-color: #ffa501;
+              border-radius: 100%;
+              border: none;
+            }
+          }
+          &__item {
+            padding-top: 45px;
+            padding-left: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 1px;
+              height: calc(100% + 10px);
+              top: -7px;
+              left: 0;
+              background-color: #000;
+            }
+            &::before {
+              content: "";
+              width: 35px;
+              height: 1px;
+              background-color: #000;
+              position: absolute;
+              left: 0px;
+              top: 63px;
+            }
+
+            .item {
+              &__head {
+                padding-left: 65px;
+                position: relative;
+                .head {
+                  &__title {
+                    font-weight: 900;
+                  }
+                  &__img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include before_circle;
+                    img {
+                      position: absolute;
+                      top: 20px;
+                      left: 15px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .advanced__subtitle {
+    font-size: 28px;
+  }
+  .advanced__info {
+    padding: 60px 10px;
+  }
+}

@@ -1,0 +1,63 @@
+@import "app/globals.scss";
+
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("/images/main_bg.jpeg") no-repeat 50% / cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  &__subtitle {
+    position: relative;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 2;
+    @include before_circle;
+  }
+  &__title {
+    width: 530px;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  &__buttons {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    .buttons {
+      &__portfolio {
+        background-color: var(--main-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 12px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      &__about {
+        background-color: rgba(255, 255, 255, 0.4);
+        text-shadow: 1px 1px black;
+        padding: 12px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo__title {
+    width: 450px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .promo {
+    background-position: 30%;
+  }
+  .promo__title {
+    width: 100%;
+    max-width: 350px;
+    font-size: 24px;
+  }
+}
