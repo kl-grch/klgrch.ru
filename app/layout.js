@@ -25,7 +25,7 @@ export const metadata = {
     description: "Create web-sites for your and your bussines with love.",
     url: "https://klgrch.ru",
     siteName: "klgrch.ru",
-    images: ["/images/meta.png"],
+    // images: [""],
     type: "website",
   },
   twitter: {
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Nikolay Gerasimov - WEB-developer",
     description: "Create web-sites for your and your bussines with love.",
     creator: "@klgrch",
-    images: ["/images/meta.png"],
+    // images: [""],
   },
 };
 
