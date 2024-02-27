@@ -35,7 +35,10 @@ export const metadata = {
     creator: "@klgrch",
     // images: [""],
   },
-  yandexVerification: "cb9e881f40c99ab5",
+  verification: {
+    yandex: "cb9e881f40c99ab5",
+    google: "HCqet60VDcOa35s8WwgmwNAG3mutvCIgwtwIf0lrykA",
+  },
 };
 
 export default function RootLayout({ children }) {
