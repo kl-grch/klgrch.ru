@@ -13,7 +13,9 @@ export default function SectionPromo() {
             <div className="buttons__portfolio">Портфолио</div>
           </Link>
           <Link href={"#about"}>
-            <div className="buttons__about">Обо мне</div>
+            <div className="buttons__about">
+              Обо мне
+            </div>
           </Link>
         </div>
       </Container>
